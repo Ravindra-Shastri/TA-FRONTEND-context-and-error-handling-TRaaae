@@ -9,7 +9,7 @@ import Title from "./Title";
 
 function Main() {
   let userMode = useContext(DarkModeContext);
-  let isDarkMode = userMode.isDarkMode.isDarkMode;
+  let isDarkMode = userMode.isDarkMode;
   return (
     <>
       <Title text="Text Component" isDarkMode={isDarkMode} />

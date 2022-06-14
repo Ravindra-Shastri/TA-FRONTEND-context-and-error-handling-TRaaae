@@ -5,7 +5,7 @@ import { DarkModeContext } from "./DarkModeContext";
 
 function Card() {
   let userMode = useContext(DarkModeContext);
-  let isDarkMode = userMode.isDarkMode.isDarkMode;
+  let isDarkMode = userMode.isDarkMode;
 
   return (
     <div className="card_item">

@@ -4,7 +4,7 @@ import { DarkModeContext } from "./DarkModeContext";
 
 function Title() {
   let userMode = useContext(DarkModeContext);
-  let isDarkMode = userMode.isDarkMode.isDarkMode;
+  let isDarkMode = userMode.isDarkMode;
   let text = userMode.text;
   return (
     <h2
