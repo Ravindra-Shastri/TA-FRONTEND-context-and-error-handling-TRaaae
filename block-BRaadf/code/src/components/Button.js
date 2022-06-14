@@ -4,7 +4,7 @@ import { DarkModeContext } from "./DarkModeContext";
 
 export default function SwitchButton() {
   let userMode = useContext(DarkModeContext);
-  let isDarkMode = userMode.isDarkMode.isDarkMode;
+  let isDarkMode = userMode.isDarkMode;
   let changeMode = userMode.changeMode;
 
   return (
