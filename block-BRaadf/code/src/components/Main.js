@@ -1,9 +1,15 @@
+import React from "react";
+import {useContext} from "react";
+import { DarkModeContext } from "./DarkModeContext";
+
 import Banner from "./Banner";
 import Cards from "./Cards";
 import Paragraph from "./Paragraph";
 import Title from "./Title";
 
-function Main({ isDarkMode }) {
+function Main() {
+  let userMode = useContext(DarkModeContext);
+  let isDarkMode = userMode.isDarkMode.isDarkMode;
   return (
     <>
       <Title text="Text Component" isDarkMode={isDarkMode} />
